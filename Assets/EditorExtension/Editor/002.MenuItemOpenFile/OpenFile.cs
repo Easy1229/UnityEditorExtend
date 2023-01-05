@@ -14,8 +14,6 @@ namespace EditorExtension
         [MenuItem("EditorExtension/001.MenuItem/OpenLocalFile")]
         private static void OpenLocalFile()
         {
-            Debug.Log(Application.dataPath);
-            Debug.Log(Application.persistentDataPath);
             EditorUtility.RevealInFinder(Application.dataPath.Replace("Assets","Doc"));
         }
     }
