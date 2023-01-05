@@ -23,6 +23,7 @@ Unity编辑器版本:**2021.3.15**,
 [MenuItem("EditorExtension/001.MenuItem/OpenLocalFile")]
 private static void OpenLocalFile()
 {
+    //将默认打开的文件夹替换为自定义的文件夹
     EditorUtility.RevealInFinder(Application.dataPath.Replace("Assets","Doc"));
 }
 ```
